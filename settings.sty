@@ -1,0 +1,45 @@
+%%% フォント等 %%%
+\usepackage{fontspec}
+\usepackage{physics}
+\usepackage[math-style=TeX,bold-style=TeX]{unicode-math}
+\setmainfont[Ligatures=TeX]{XITS}
+\setsansfont[Ligatures=TeX]{TeX Gyre Heros}
+\setmathfont{XITS Math}
+\setmathfont{XITS Math}[range={cal,bfcal},StylisticSet=1]
+%%% hyperref %%%
+\usepackage[%
+  bookmarks=false,			% pdf にしおりをつける
+  setpagesize=false,		% 紙のサイズを変更しない
+  hidelinks,     			% リンクに色をつけない
+%   allcolors=blue            % リンクの色を全て青に統一する
+  ]{hyperref}
+%%% 図関連 %%%
+% 図の読み込みに必要
+\usepackage{graphicx}
+% 関連する図を並べる際に使用
+\usepackage[labelsep=quad]{caption}
+\usepackage[labelsep=space,labelformat=simple]{subcaption}
+\renewcommand{\thesubfigure}{(\alph{subfigure})}
+% 図に対して文章を回り込ませる
+\usepackage{wrapfig}
+%%% 表関連 %%%
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+%%% その他の設定 %%%
+\renewcommand{\figurename}{Fig.~}	% 図のキャプションを変更
+\renewcommand{\tablename}{Table~}	% 表のキャプションを変更
+
+%%% 通常の本文ページスタイル %%%
+% 柱とノンブルをそれぞれページ上部の左右に表示
+% ページ下部は何も表示しない
+\NewPageStyle{normal}{
+  running_head_position=bottom-left,   % 柱の位置
+  nombre={},%                         % ノンブルの内容
+  odd_running_head={$\overline{\hbox to 0.6\columnwidth{\hspace{2mm}\text{第 61 回日本伝熱シンポジウム講演論文集 (2024-5)}}}$\hfill}, % 奇数ページの柱
+  even_running_head={$\overline{\hbox to 0.6\columnwidth{\hspace{2mm}\text{第 61 回日本伝熱シンポジウム講演論文集 (2024-5)}}}$\hfill} % 偶数ページの柱
+}
+\pagestyle{normal}
+
+\ModifyHeading{section}{%
+  font={\normalsize\bfseries}
+}
