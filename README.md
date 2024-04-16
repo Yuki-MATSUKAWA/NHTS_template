@@ -16,7 +16,7 @@
 - `template-a.tex`: 日本語の講演アブストラクト原稿（A4 用紙 1 枚）
 - `template-ae.tex`: English abstract manuscript (International sessions, 1 page of A4 size)
 - `template-p.tex`: 日本語の講演論文原稿（A4 用紙 2--6 枚）
-- `template-pe.tex`: English abstract manuscript (International sessions, 2--6 pages of A4 size)
+- `template-pe.tex`: English full-size manuscript (International sessions, 2--6 pages of A4 size)
 
 ## 使用方法
 
