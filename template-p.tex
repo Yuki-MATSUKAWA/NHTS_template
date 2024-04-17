@@ -25,20 +25,36 @@
 \usepackage{settings}
 
 %%% フッターの情報 %%%
-% 開催する回に応じて内容を忘れずに変更
-\newcommand{\foot}{第xx回日本伝熱シンポジウム講演論文集 (20xx-5)}
+\newcommand{\foot}{
+  %%% 開催する回に応じて内容を忘れずに変更 %%%
+  第xx回日本伝熱シンポジウム講演論文集 (20xx-5)
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  }
 
 \begin{document}
 
-\thispagestyle{normal}
+\thispagestyle{nhts}
 
 %%% 著者情報 %%%
 \begin{center}
     \fontsize{14pt}{18pt}\selectfont
     {\gtfamily
-    講演論文原稿の書き方（和文表題：Gothic 14pt）
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    ここには和文表題を書いてください．
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     }\\\fontsize{12pt}{14pt}\selectfont
-    Guide for the manuscripts (英文表題: Times New Roman 12pt)
+    {\gtfamily
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    ここには和文副題を書いてください．
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    }\\
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Please write the English title here.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \\
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Please write the English subtitle here.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \vskip12pt\fontsize{10pt}{12pt}\selectfont
     \begin{tabular}{lrll}
       伝学  &$^\ast$\hspace{-3mm} &伝熱 太郎  &（伝熱大学）\\
@@ -53,17 +69,49 @@
     \vskip12pt
 \end{center}
 {\setlength{\leftskip}{\leftskip+15truemm}\setlength{\rightskip}{\rightskip+15truemm}%
-%%%%%%%%% ここにはアブストラクトを書いてください %%%%%%%%%
+%%% ここにはアブストラクトを書いてください %%%
 \lipsum[1-2]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \par}%
 \begin{center}
     \vskip12pt
-    \textit{Key Words}: Heat Transfer, Boiling, Two-phase flow, Forced convection, Natural convection
+    \textit{Key Words}: 
+    %%% ここにはこの研究のキーワードを書いてください %%%
+    Heat Transfer, Boiling, Two-phase flow, Forced convection, Natural convection
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \vskip12pt
 \end{center}
 
+\section{序論}
 
 \jalipsum[1-4]{wagahai}
+
+\lipsum[1-4]
+
+\section{解析対象・計算条件}
+
+\jalipsum[1-4]{wagahai}
+
+\subsection{支配方程式}
+
+\subsection{計算条件}
+
+\subsubsection{計算コードの妥当性検証}
+
+\lipsum[1-4]
+
+\jalipsum[1-4]{wagahai}
+
+\section{結果・考察}
+
+\lipsum[1-4]
+
+\section{結論}
+
+\jalipsum[1-4]{wagahai}
+
+\section*{謝辞}
+
+\lipsum[1-4]
 
 \end{document}
