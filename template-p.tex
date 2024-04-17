@@ -1,1 +1,69 @@
-% 講演論文原稿
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%            日本伝熱学会主催「日本伝熱シンポジウム」
+%%%  【非公式】講演アブストラクト原稿（A4 用紙 2--6 枚，日本語）
+%%%
+%%%     <https://github.com/Yuki-MATSUKAWA/NHTS_template>
+%%%
+%%%                      v1.0.0 Yuki MATSUKAWA xx Apr. 2024
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+    paper=a4paper,      % A4 用紙サイズ
+    article,            % article 相当の文書クラス
+    fleqn,              % 数式を左寄せ
+    fontsize=10pt,      % 欧文サイズ 10 pt
+    jafontsize=10pt,    % 和文サイズ 10 pt
+    head_space=20mm,    % 天の余白
+    foot_space=25mm,    % 地の余白
+    gutter=20mm,        % のどの余白
+    fore-edge=20mm      % 小口の余白
+    ]{jlreq}            % jlreq クラスを使用
+
+%%% 使用するスタイルファイル %%%
+\usepackage{settings}
+
+%%% フッターの情報 %%%
+% 開催する回に応じて内容を忘れずに変更
+\newcommand{\foot}{第xx回日本伝熱シンポジウム講演論文集 (20xx-5)}
+
+\begin{document}
+
+\thispagestyle{normal}
+
+%%% 著者情報 %%%
+\begin{center}
+    \fontsize{14pt}{18pt}\selectfont
+    {\gtfamily
+    講演論文原稿の書き方（和文表題：Gothic 14pt）
+    }\\\fontsize{12pt}{14pt}\selectfont
+    Guide for the manuscripts (英文表題: Times New Roman 12pt)
+    \vskip12pt\fontsize{10pt}{12pt}\selectfont
+    \begin{tabular}{lrll}
+      伝学  &$^\ast$\hspace{-3mm} &伝熱 太郎  &（伝熱大学）\\
+        & &伝熱 花子  &（伝熱大学）\\
+      伝正  & &抜山 四郎  &（東京伝熱大学）
+    \end{tabular}
+    \vskip12pt
+    Taro DENNETSU$^1$, Hanako DENNETSU$^1$ and Shiro NUKIYAMA$^2$
+    \\
+    $^1$Dept. of Mech. Eng., Dennetsu Univ., 5-1-5, Kashiwanoha, Kashiwa, 277-8563 \\
+    $^2$Dept. of Mech. Eng., Tokyo Dennetsu Univ., 1-18-11, Uchikanda, Chiyoda, 101-0047
+    \vskip12pt
+\end{center}
+{\setlength{\leftskip}{\leftskip+15truemm}\setlength{\rightskip}{\rightskip+15truemm}%
+%%%%%%%%% ここにはアブストラクトを書いてください %%%%%%%%%
+\lipsum[1-2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par}%
+\begin{center}
+    \vskip12pt
+    \textit{Key Words}: Heat Transfer, Boiling, Two-phase flow, Forced convection, Natural convection
+    \vskip12pt
+\end{center}
+
+
+\jalipsum[1-4]{wagahai}
+
+\end{document}
