@@ -3,7 +3,7 @@
 %%%                   settings.sty
 %%%           原稿テンプレート スタイルファイル
 %%%
-%%%               v1.0.0 Yuki MATSUKAWA 16 Apr. 2024
+%%%               v1.0.0 Yuki MATSUKAWA xx Apr. 2024
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -17,11 +17,14 @@
 \setmathfont{XITS Math}[range={cal,bfcal},StylisticSet=1]
 %%% hyperref %%%
 \usepackage[%
-  bookmarks=false,			% pdf にしおりをつける
+  bookmarks=false,			% pdf にしおりをつけない
   setpagesize=false,		% 紙のサイズを変更しない
   hidelinks,     			% リンクに色をつけない
 %   allcolors=blue            % リンクの色を全て青に統一する
   ]{hyperref}
+% ダミーテキスト生成パッケージ
+\usepackage{lipsum}
+\usepackage{bxjalipsum}
 %%% 図関連 %%%
 % 図の読み込みに必要
 \usepackage{graphicx}
@@ -37,6 +40,7 @@
 %%% その他の設定 %%%
 \renewcommand{\figurename}{Fig.~}	% 図のキャプションを変更
 \renewcommand{\tablename}{Table~}	% 表のキャプションを変更
+\usepackage{calc}                   % アブストラクトの余白調整に使用
 
 %%% 通常の本文ページスタイル %%%
 % 柱とノンブルをそれぞれページ上部の左右に表示
