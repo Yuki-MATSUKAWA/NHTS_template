@@ -96,6 +96,18 @@
 
 \subsection{計算条件}
 
+\begin{table}[tp]
+  \centering
+  \caption{Sample table.}
+  \label{tab:table}
+  \begin{tabularx}{0.5\textwidth}{C|C|C} \hline\hline
+    A  &a  &1 \\ \hline
+    B  &b  &2 \\ \hline
+    C  &c  &3 \\ \hline
+    D  &d  &4 \\ \hline
+  \end{tabularx}
+\end{table}
+
 \subsubsection{計算コードの妥当性検証}
 
 \lipsum[1-4]
@@ -103,6 +115,33 @@
 \jalipsum[1-4]{wagahai}
 
 \section{結果・考察}
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[width=0.5\columnwidth]{figure/tiger.pdf}
+  \caption{A sample figure.}
+  \label{fig:one_figure}
+\end{figure}
+
+
+\begin{figure}[tp]
+  \centering
+  \begin{subfigure}{0.45\columnwidth}
+      \centering
+      \includegraphics[width=\columnwidth]{example-image-a}
+      \caption{Left figure.}
+      \label{fig:two_figures_a}
+  \end{subfigure}
+  \hfill % ここで空白を入れると図が適切に配置される．\hspace{} なども可．
+  \begin{subfigure}{0.45\columnwidth}
+      \centering
+      \includegraphics[width=\columnwidth]{example-image-b}
+      \caption{Right figure.}
+      \label{fig:two_figures_b}
+  \end{subfigure}
+  \caption{Two sample figures.}
+  \label{fig:two_figures}
+\end{figure}
 
 \lipsum[1-4]
 
